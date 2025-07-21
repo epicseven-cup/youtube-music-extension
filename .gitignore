@@ -1,3 +1,7 @@
+/build/
+/out/
+*.zip
+
 # Logs
 logs
 *.log

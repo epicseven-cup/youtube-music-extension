@@ -1,0 +1,18 @@
+{
+  "name": "youtube-music-chrome-extension",
+  "description": "Display youtube music that user is current watching on Discord status",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {},
+  "background": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "./scripts/content-script.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "youtube music",
+  "version": "1.0.0",
+
+  "description": "discord status for youtube music",
+
+  "icons": {},
+
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["scripts/content-script.js"]
+    }
+  ]
+}
