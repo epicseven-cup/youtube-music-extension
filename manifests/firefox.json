@@ -7,6 +7,14 @@
 
   "icons": {},
 
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "winterstorm.dev@gmail.com",
+      "strict_min_version": "58.0"
+    }
+  },
+
+
   "content_scripts": [
     {
       "matches": ["https://music.youtube.com/*"],

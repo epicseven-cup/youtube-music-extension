@@ -24,10 +24,10 @@ build_firefox(){
   cp "shared/content-script.js" "build/firefox/scripts/"
 }
 
-zip() {
+zip_folder() {
   mkdir "out/"
   zip -r "out/chrome.zip" "build/chrome"
-  zip -r "out/firefox.zip" "build/firefox"
+  cd "build/firefox" && zip -r -FS "../../out/firefox.zip" . -i "*" && cd ../..
 }
 
 clean_up(){
@@ -39,4 +39,5 @@ clean_up(){
 init
 build_chrome
 build_firefox
+zip_folder
 
