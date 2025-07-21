@@ -1,6 +1,6 @@
-import {io, Socket} from "socket.io-client";
 import {Presence} from "discord-rpc";
 import { DEFAULT } from "./constant";
+import {io, Socket} from "socket.io-client";
 
 
 function timestampToSeconds(timestamp: string): number {
